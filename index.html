@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <title>Troca de Presentes</title>
+</head>
+<body>
+    <main class="container">
+        <header class="header">
+            <h1>Troca de Presentes</h1>
+            <p>Organize sua troca de presentes de forma simples e divertida!</p>
+        </header>
+        <section class="input-area">
+            <h2>Adicione os participantes</h2>
+            <div class="input-group">
+                <input type="text" id="participant" placeholder="Nome do participante">
+                <button id="add-participant">Adicionar</button>
+            </div>
+            <ul id="participant-list" aria-live="polite"></ul>
+        </section>
+        <section class="result-area">
+            <button id="draw-button">Realizar Sorteio</button>
+            <div id="result" aria-live="assertive"></div>
+        </section>
+    </main>
+    <script src="app.js" defer></script>
+</body>
+</html>
